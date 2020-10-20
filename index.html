@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>quiz matematika</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="index.css">
+    <style media="screen">
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    </style>
+</head>
+<body>
+
+<br><br>
+  <div class="calculator card" id="box">
+    
+    <input type="text" id="questions" class="calculator-screen z-depth-1" value="0 x 0" readonly style="background:#bec0c2;"/>
+    <input type="text" id="my_answer" class=" calculator-screen z-depth-1" value="" readonly style="background: #2b2928; color: white;"/>
+    <span>
+      <button class="btn btn-dark" id="direct-input-btn" data-value='right'>right</button>
+    </span>
+    <div class="calculator-keys">
+      <button type="button" style="grid-area: 1 / 1 / 1 / 1;" class="operator btn btn-info" data-toggle="modal" data-target="#requestFrom">Request</button>
+      <button type="button" style="grid-area: 2 / 2 / 1 / span 2;" class="operator btn btn-primary" id="change_button">Change</button>
+      <!-- <button type="button" style="grid-area: 1 / 1 / 1 / 2;" class="operator btn btn-secondary" id="history_quest">History</button> -->
+  
+
+      <button type="button" data-value="7" class="btn btn-light waves-effect button_number">7</button>
+      <button type="button" data-value="8" class="btn btn-light waves-effect button_number">8</button>
+      <button type="button" data-value="9" class="btn btn-light waves-effect button_number">9</button>
+
+
+      <button type="button" data-value="4" class="btn btn-light waves-effect button_number">4</button>
+      <button type="button" data-value="5" class="btn btn-light waves-effect button_number">5</button>
+      <button type="button" data-value="6" class="btn btn-light waves-effect button_number">6</button>
+
+
+      <button type="button" data-value="1" class="btn btn-light waves-effect button_number">1</button>
+      <button type="button" data-value="2" class="btn btn-light waves-effect button_number">2</button>
+      <button type="button" data-value="3" class="btn btn-light waves-effect button_number">3</button>
+
+
+      <button type="button" data-value="-" class="decimal function btn btn-secondary button_number">-</button>
+      <button type="button" data-value="0" class="btn btn-light waves-effect button_number">0</button>
+      <button type="button" class="all-clear function btn btn-danger btn-sm" id="button_delete">CC</button>
+    </div>
+
+  </div>
+
+<div class="modal fade" id="requestFrom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Request</h5>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-primary aktif math_operations" data-op=" + "> + </button>
+        <button type="button" class="btn btn-primary aktif math_operations" data-op=" - "> - </button>
+        <button type="button" class="btn btn-primary aktif math_operations" data-op=" x "> x </button>
+        <br><br>
+        <div>
+          <input type="number" id="start_number" class="form-control" placeholder="From Numbers?">
+          <br>
+          <input type="number" id="end_number" class="form-control" placeholder="Up To Numbers?">
+        </div>
+        <br>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="submit_request" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js">
+</script>
+</body>
+</html>
