@@ -48,6 +48,17 @@ html {
   padding: 20px;
 }
 
-.math_operations{
 
+.button_number{
+   outline:none !important;
+}
+
+.button_number:active{
+  border: solid 1px white !important;
+}
+.button_number{
+  border: solid 1px white !important;
+}
+.button_number:focus{
+  border: solid 1px white !important;
 }
